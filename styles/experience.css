@@ -1,0 +1,160 @@
+#experience-intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  position: relative;
+}
+
+.intro-content {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.intro-content a {
+  flex: 1;
+  height: 100vh;
+  position: relative;
+}
+
+.intro-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.5) blur(5px);
+  /* Apply grayscale and blur filter */
+  opacity: 0.6;
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.intro-content img:hover {
+  filter: grayscale(0) blur(2px);
+  /* Reduce blur on hover */
+  opacity: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s, bottom 0.3s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add text shadow */
+}
+
+.intro-content a:hover .overlay-text {
+  bottom: 20%;
+  opacity: 1;
+}
+
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add text shadow */
+}
+
+.session {
+  height: 100vh;
+}
+
+.session-desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.session h2 {
+  font-size: 60px;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.session ul {
+  list-style-type: none;
+  padding: 0;
+  flex: 1;
+}
+
+.session ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.session ul li:before {
+  content: "\2022";
+  /* Add bullet point */
+  color: #007bff;
+  /* Change bullet point color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Style links */
+.session ul li a {
+  color: #007bff;
+  /* Change link color */
+  text-decoration: none;
+}
+
+.session ul li a:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+.session-images {
+  overflow: hidden;
+  position: relative;
+  height: 30vh;
+}
+
+.carousel-container {
+  display: flex;
+  width: 400%;
+  animation: carousel 10s infinite linear;
+
+}
+
+.slide {
+  flex: 1;
+}
+
+.slide img {
+  width: auto;
+  /* Set width to auto to maintain aspect ratio */
+  height: 100%;
+  /* Ensure each slide takes up the full height of the carousel */
+  object-fit: contain;
+  object-position: center;
+  /* Center the image within its container */
+
+  /* Maintain aspect ratio without stretching */
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-25%);
+  }
+}

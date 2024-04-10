@@ -1,0 +1,26 @@
+.school {
+    background-color: var(--project-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .school h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .school div {
+    margin-bottom: 5px;
+  }
+  
+  .school ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .school ul li {
+    margin-bottom: 5px;
+  }

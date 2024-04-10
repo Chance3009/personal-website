@@ -1,0 +1,64 @@
+#achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.award {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 40px);
+    margin: 20px;
+    background-color: var(--contact-color);
+    transition: background-color 0.3s ease;
+}
+
+.award:hover {
+    transform: translateY(-5px);
+}
+
+.award:nth-child(even) {
+    background-color: var(--project-color);
+}
+
+.images-container,
+.description {
+    flex: 1;
+    padding: 20px;
+    margin: 40px;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    margin-bottom: 10px;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 40vh;
+    /* Adjust the height of the images as needed */
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h2 {
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.description p {
+    font-size: large;
+    text-align: justify;
+}

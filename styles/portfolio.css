@@ -1,0 +1,47 @@
+#projects {
+    background-color: var(--project-color);
+    margin: 0;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+#projects h1 {
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+    font-size: 3rem;
+    margin-top: 0;
+    padding-top: 70px;
+}
+
+.project-tile {
+    width: 400px;
+    height: 460px;
+    text-decoration: none;
+    margin: 2vw auto;
+    background-color: var(--intro-color);
+}
+
+.project-tile p {
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 0;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.images {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
