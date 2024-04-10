@@ -26,14 +26,12 @@
   height: 100%;
   object-fit: cover;
   filter: grayscale(0.5) blur(5px);
-  /* Apply grayscale and blur filter */
   opacity: 0.6;
   transition: opacity 0.3s, filter 0.3s;
 }
 
 .intro-content img:hover {
   filter: grayscale(0) blur(2px);
-  /* Reduce blur on hover */
   opacity: 1;
 }
 
@@ -48,7 +46,6 @@
   opacity: 0;
   transition: opacity 0.3s, bottom 0.3s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  /* Add text shadow */
 }
 
 .intro-content a:hover .overlay-text {
@@ -66,17 +63,34 @@ h1 {
   color: #fff;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  /* Add text shadow */
 }
 
 .session {
-  height: 100vh;
-}
-
-.session-desc {
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-bottom: 10px double white;
+}
+
+.session:last-child {
+  border: none;
+}
+
+.session-desc {
+  flex: 1;
+}
+
+.session-desc:nth-child(even) {
+  margin-left: 5%;
+}
+
+.session-desc:nth-child(odd) {
+  margin-right: 5%;
+}
+
+.session-desc:nth-child(even) {
+  margin-left: 5%;
 }
 
 .session h2 {
@@ -99,62 +113,44 @@ h1 {
 
 .session ul li:before {
   content: "\2022";
-  /* Add bullet point */
   color: #007bff;
-  /* Change bullet point color */
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
 
-/* Style links */
 .session ul li a {
   color: #007bff;
-  /* Change link color */
   text-decoration: none;
 }
 
 .session ul li a:hover {
   text-decoration: underline;
-  /* Underline on hover */
 }
 
-.session-images {
+.carousel {
+  flex: 1;
   overflow: hidden;
-  position: relative;
-  height: 30vh;
+  min-height: 70vh;
 }
 
 .carousel-container {
   display: flex;
-  width: 400%;
-  animation: carousel 10s infinite linear;
-
-}
-
-.slide {
-  flex: 1;
+  animation: scroll 22s linear infinite;
 }
 
 .slide img {
-  width: auto;
-  /* Set width to auto to maintain aspect ratio */
-  height: 100%;
-  /* Ensure each slide takes up the full height of the carousel */
+  height: 70vh;
   object-fit: contain;
-  object-position: center;
-  /* Center the image within its container */
-
-  /* Maintain aspect ratio without stretching */
 }
 
-@keyframes carousel {
+@keyframes scroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-25%);
+    transform: translateX(-600%);
   }
 }
