@@ -1,0 +1,93 @@
+#achievement-intro {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    background-color: black;
+}
+
+#achievement-intro img {
+    object-fit: cover;
+    width: calc(100vw / 6);
+    height: 100%;
+    filter: grayscale(0.2) blur(4px);
+    opacity: 0.6;
+}
+
+h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.award {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 40px);
+    margin: 20px;
+    background-color: var(--contact-color);
+    transition: background-color 0.3s ease;
+}
+
+.award:hover {
+    transform: translateY(-5px);
+}
+
+#achievement a:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.images-container,
+.description {
+    flex: 1;
+    padding: 20px;
+    margin: 40px;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    margin-bottom: 10px;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 40vh;
+    object-fit: cover;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h2 {
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.description p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 10px;
+}

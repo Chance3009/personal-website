@@ -1,52 +1,136 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Chan Ci En's Personal Website</title>
+  <link rel="stylesheet" href="styles/home.css" />
+  <title>Chan Ci En (215035) Individual Project</title>
 </head>
 
 <body>
-  <nav id="navbar">
+  <nav class="navbar">
     <ul>
       <li><a class="nav-link" href="index.html">Home</a></li>
       <li><a class="nav-link" href="education.html">Education</a></li>
-      <li><a class="nav-link" href="experience.html">Experience</a></li>
-      <li><a class="nav-link" href="achievement.html">Achievement</a></li>
-      <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+      <li><a class="nav-link" href="experiences.html">Experiences</a></li>
+      <li><a class="nav-link" href="achievements.html">Achievements</a></li>
+      <li><a class="nav-link" href="projects.html">Projects</a></li>
       <li><a class="nav-link" href="contact.html">Contact Me</a></li>
     </ul>
   </nav>
   <main>
-    <div id="home">
-      <h1>Hey I am Ci En</h1>
-      <h2>a homosapien</h2>
-      <p>I am a Software Engineering student who aims to harness the power of technology to create positive impact in
-        society.
-        I am a passionate learner. In addition to my academic studies, I learn new skills from platforms such as
-        freeCodeCamp and Coursera, and obtained a few certificates. Furthermore, I have actively participated in school
-        events and held positions within several clubs and organizations. These experiences have allowed me to develop
-        valuable teamwork, communication, and organizational skills.
-      </p>
+    <section class="hero" id="about">
+      <img src="assets/images/me.png" alt="Image of Chan Ci En" />
+      <div class="bio">
+        <h1 class="bio-title">Chan Ci En</h1>
+        <p class="bio-text">
+          I am a <span>Software Engineering student</span> who aims to harness the power of technology to create
+          positive impact in society.
+          I am a <span>passionate learner</span>. In addition to my academic studies, I learn new skills from platforms
+          such as
+          freeCodeCamp and Coursera, and obtained a few certificates. Furthermore, I have actively participated in
+          school events and held positions within several clubs and organizations. These experiences have allowed me to
+          develop valuable teamwork, communication, and organizational skills.
+        </p>
+        <p id="funfact">Psst! I am a cat lover that have thousands of cat pics in my phone.
+          This is my Instagram account to share cat pics. Do check it out! <a
+            href="https://www.instagram.com/kmphmeow/"> <img src="assets/images/cat.jpg" id="cat" alt="Image of a cat">
+            <br>
+          </a>
+        </p>
+      </div>
+    </section>
+    <div class="info">
+      <table class="education-table">
+        <caption>Education</caption>
+        <tr>
+          <th>Year</th>
+          <th>Stage</th>
+          <th>Field of Study</th>
+          <th>Institution</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>2022 - 2026</td>
+          <td>Bachelor's Degree</td>
+          <td>Software Engineering</td>
+          <td>Universiti Putra Malaysia (UPM)</td>
+          <td>Seri Kembangan, Selangor</td>
+        </tr>
+        <tr>
+          <td>2021 - 2022</td>
+          <td>Matriculation</td>
+          <td>Physical Science</td>
+          <td>Pahang Matriculation College (KMPh)</td>
+          <td>Gambang, Pahang</td>
+        </tr>
+        <tr>
+          <td>2016 - 2020</td>
+          <td>Secondary Education</td>
+          <td>Pure Science</td>
+          <td>SMJK Yu Hua</td>
+          <td>Kajang, Selangor</td>
+        </tr>
+        <tr>
+          <td>2010 - 2015</td>
+          <td>Primary Education</td>
+          <td>-</td>
+          <td>SJK(C) Connaught 2</td>
+          <td>Hulu Langat, Selangor</td>
+        </tr>
+      </table>
+      <div class="divider"></div>
+      <table class="languages-table">
+        <caption>Language Proficiency</caption>
+        <tr>
+          <th>Language</th>
+          <th>Proficiency Level</th>
+        </tr>
+        <tr>
+          <td>Chinese</td>
+          <td>Native</td>
+        </tr>
+        <tr>
+          <td>Malay</td>
+          <td>Full professional proficiency</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>Full professional proficiency</td>
+        </tr>
+        <tr>
+          <td>Cantonese</td>
+          <td>Limited working proficiency</td>
+        </tr>
+        <tr>
+          <td>Japanese</td>
+          <td>Elementary proficiency</td>
+        </tr>
+      </table>
     </div>
-
-    <footer>
-      <p>Connect with Me</p> 
-      <ul class="social-icons">
-        <li><a href="https://www.facebook.com/chance3009" target="_blank"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li><a href="https://github.com/chance3009" id="profile-link" target="_blank"><i class="fab fa-github"></i></a>
-        </li>
-        <li> <a href="https://www.linkedin.com/in/chancien" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </li>
-        <li> <a href="mailto:chance3009@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i></i></a>
-        </li>
-        <li> <a href="tel:+60102939109" target="_blank"><i class="fa-solid fa-phone"></i></a>
-        </li>
-      </ul>
-    </footer>
+  </main>
+  <footer>
+    <p>Connect with Me</p>
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com/chance3009" target="_blank"><img src="assets/icons/facebook.svg"
+            alt="Facebook icon"></a>
+      </li>
+      <li><a href="https://github.com/chance3009" target="_blank"><img src="assets/icons/github.svg"
+            alt="GitHub icon"></a>
+      </li>
+      <li> <a href="https://www.linkedin.com/in/chancien" target="_blank"><img src="assets/icons/linkedin.svg"
+            alt="LinkedIn icon"></a>
+      </li>
+      <li> <a href="https://discord.com/users/chance3009" target="_blank"><img src="assets/icons/discord.svg"
+            alt="Discord icon"></a>
+      </li>
+      <li> <a href="https://www.instagram.com/chance_3009" target="_blank"><img src="assets/icons/instagram.svg"
+            alt="Instagram icon"></a>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>

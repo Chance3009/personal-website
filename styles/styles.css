@@ -1,10 +1,11 @@
 :root {
-  --header-color: #207867;
-  --text-color: #CAD3C8;
-  --intro-color: #2C3A47;
-  --project-color: #757b4b;
+  --bg-color: #e2e0e0;
+  --primary-color: #385170;
+  --secondary-color: #142d4c;
+  --text-color: #9fd3c7;
   --contact-color: #424d6a;
-  --hover-color: #F97F51;
+  --hover-color: #969eb4;
+  --font-family: "Roboto", sans-serf;
 }
 
 * {
@@ -12,34 +13,46 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
-  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
 }
 
-#navbar {
+h2 {
+  color: var(--bg-color);
+}
+
+.navbar {
   position: sticky;
-  float: right;
   top: 0;
+  left: 0;
   width: 100%;
-  background-color: var(--header-color);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   z-index: 2;
   height: 70px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-#navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar ul {
   overflow: hidden;
-  margin-right: 20px;
 }
 
-#navbar li {
+.navbar li {
   float: left;
 }
 
@@ -54,74 +67,22 @@ body {
 
 .nav-link:hover {
   background-color: var(--hover-color);
-}
-
-#home {
-  background-color: var(--intro-color);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  place-content: center;
-  font-size: 200%;
-  height: 100vh;
-}
-
-#home h1 {
-  color: var(--text-color);
-  margin: 10px;
-}
-
-#home h2 {
-  color: var(--header-color);
-  margin: 10px;
-  font-weight: 100;
-  font-style: italic;
-  font-size: 2rem;
-}
-
-#contact {
-  background-color: var(--contact-color);
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-  text-align: center;
-  height: 100vh;
-  font-size: 200%;
-  padding-top: 20vh;
-}
-
-#contact h1 {
-  margin: 40px auto 10px auto;
-}
-
-#contact h2 {
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 200;
-  margin: 5px;
-}
-
-#contact-link {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  margin: 50px auto;
-}
-
-#contact-link a {
-  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 footer {
+  display: block;
+  width: 100%;
   background-color: var(--contact-color);
-  border-top: 5px solid var(--header-color);
+  border-top: 5px solid var(--secondary-color);
   padding: 20px 0 10px 0;
   text-align: center;
 }
 
 footer p {
-  margin: 0;
-  font-size: medium;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 20px;
 }
 
 .social-icons {
@@ -134,30 +95,14 @@ footer p {
   margin: 0 20px;
 }
 
-.social-icons a {
-  color: #333;
-  font-size: 24px;
-}
-
-.social-icons a:hover {
-  color: #007bff;
+.social-icons img {
+  width: 40px;
 }
 
 #experience,
-#education, #achievement {
+#education,
+#achievement,
+#projects {
   padding: 1vh 10vw;
-  background-color: var(--intro-color);
   color: var(--text-color);
-}
-
-@media (max-width: 1350px) {
-  #project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 900px) {
-  #project-grid {
-    grid-template-columns: 1fr;
-  }
 }
