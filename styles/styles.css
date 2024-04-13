@@ -57,17 +57,22 @@ h2 {
 }
 
 .nav-link {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: var(--text-color);
   font-weight: 600;
-  font-size: 130%;
-  padding: 25px;
+  font-size: 20px;
+  padding: calc(10px + 1vw);
+  height: 100%;
 }
 
 .nav-link:hover {
   background-color: var(--hover-color);
   color: var(--secondary-color);
+}
+
+.active {
+  color: #ececec ;
 }
 
 footer {

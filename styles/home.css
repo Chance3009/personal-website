@@ -1,16 +1,21 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero {
     height: 90vh;
     padding: 20px;
     margin: 0 40px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
     gap: 40px;
 }
 
-.hero img {
-    height: 70vh;
+.hero-img {
+    height: 65vh;
     width: auto;
 }
 
@@ -28,7 +33,7 @@
 }
 
 .bio-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 12px;
     line-height: 30px;
 }
@@ -96,10 +101,11 @@ td {
     margin: 20px;
 }
 
-@media (max-width: 884px) {
+@media (max-width: 1200px) {
     .hero {
         margin-top: 10px;
         flex-direction: column;
+        height: 100%;
     }
 
     .bio {
@@ -110,18 +116,13 @@ td {
     .bio-title {
         font-size: 3rem;
     }
-}
 
-@media (max-width: 678px) {
-    .bio-title {
-        font-size: 2rem;
+    .info {
+        flex-direction: column;
+        height: 100%;
     }
 
-    .navbar ul {
+    .divider {
         display: none;
-    }
-
-    .burger-menu {
-        display: block;
     }
 }

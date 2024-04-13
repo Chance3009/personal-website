@@ -26,10 +26,9 @@ h1 {
     position: absolute;
     top: 70%;
     left: 50%;
-    width: 100%;
+    width: 60%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    padding: 300px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -46,7 +45,7 @@ h1 {
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 50px;
+    padding: 20px 50px 50px ;
     grid-gap: 20px;
 }
 
@@ -54,7 +53,7 @@ h1 {
     width: 460px;
     height: 500px;
     text-decoration: none;
-    margin: 2vw auto;
+    margin: 1vw auto;
     background-color: var(--secondary-color);
     transition: box-shadow 0.3s ease;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -101,14 +100,14 @@ h1 {
     background-color: transparent;
 }
 
-.techs .tech{
+.techs .tech {
     height: fit-content;
     font-size: 16px;
     padding: 4px 12px;
 }
 
-@media (max-width: 900px) {
-    #project-grid {
+@media (max-width: 1000px) {
+    #projects {
         grid-template-columns: 1fr;
     }
 }

@@ -34,8 +34,8 @@
 .intro-content img:hover {
   filter: grayscale(0) blur(3px);
   opacity: 1;
-  transform: scale(1.05); 
-  transform-origin: center center; 
+  transform: scale(1.05);
+  transform-origin: center center;
   transition: transform 0.7s;
 }
 
@@ -69,6 +69,10 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+#experience {
+  background-color: var(--secondary-color);
+}
+
 .session {
   min-height: 100vh;
   display: flex;
@@ -77,24 +81,17 @@ h1 {
   border-bottom: 10px double white;
 }
 
+.session:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .session:last-child {
   border: none;
 }
 
 .session-desc {
   flex: 1;
-}
-
-.session-desc:nth-child(even) {
-  margin-left: 5%;
-}
-
-.session-desc:nth-child(odd) {
-  margin-right: 5%;
-}
-
-.session-desc:nth-child(even) {
-  margin-left: 5%;
+  margin: 0 20px;
 }
 
 .session h2 {
@@ -139,6 +136,8 @@ h1 {
   flex: 1;
   overflow: hidden;
   min-height: 70vh;
+  max-width: 40vw;
+  margin: 0 20px;
 }
 
 .carousel-container {
@@ -151,10 +150,6 @@ h1 {
   object-fit: contain;
 }
 
-#experience {
-background-color: var(--secondary-color);
-}
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -162,5 +157,17 @@ background-color: var(--secondary-color);
 
   100% {
     transform: translateX(-600%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .session, .session:nth-child(even) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .carousel {
+    max-width: 100%;
+    margin: 20px 0;
   }
 }
