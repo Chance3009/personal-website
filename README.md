@@ -9,4 +9,4 @@ Nothing interesting here, like me myself <br>
 . <br>
 . <br>
 . <br>
-[OK HERE IS THE LINK](https://chance-personal-website.000webhostapp.com)
+[OK HERE IS THE LINK](https://chance3009.github.io/personal-website/)
